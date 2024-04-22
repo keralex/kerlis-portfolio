@@ -1,10 +1,10 @@
 import './App.css'
-import { Box } from '@chakra-ui/react'
+import Presentation from './organisms/Presentation/Presentation'
 
 function App() {
   return (
     <>
-      <div><Box color="primary.500">Welcome</Box></div>
+      <Presentation/>
     </>
   )
 }
