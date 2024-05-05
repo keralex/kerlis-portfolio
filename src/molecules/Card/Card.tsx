@@ -9,8 +9,7 @@ const Card = ( props: CardProps ) => {
             <Box sx={titleStyles}>
                 <Text color='primary.600'>{title}</Text>
                 <Text color='neutral.0'>X</Text>
-                
-                </Box> 
+            </Box> 
             {children}
         </Box>
 }
