@@ -32,10 +32,9 @@ const Presentation = () => {
             </Box>
             {/* buttons  */}
             <Box display='flex' gap={3} width='100%'>
-      <Button>Experience</Button>
-      <Button>Education</Button>
-      <Button variant='secondary'>Contact</Button>
-                
+                <Button>Experience</Button>
+                <Button>Education</Button>
+                <Button variant='secondary'>Contact</Button>
             </Box>
         </Box>
     </Box>
