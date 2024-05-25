@@ -6,22 +6,22 @@ import pixelArt from '../../assets/images/pixelArt.png'
 
 const Presentation = () => {
     return <Box sx={presentationStyles} style={{ backgroundImage:`url(${pixelArt}), url(${background})`}}>
-        <Box display='flex' width='50%' sx={rightBoxStyles}>
-            <Box sx={{position: 'absolute', left:'100px', top:'100px', height: 'fit-content' }}>
+        <Box  sx={rightBoxStyles}>
+            <Box sx={{position: 'absolute', left:{base: '10%', md: '100px'}, top:{base: '5%', md: '100px'}, height: 'fit-content' }}>
                 <Card title={`Hi! I'm`}>
-                    <Box p='1rem 0'>
-                        <Text color='primary.600' fontSize='4rem' fontFamily='heading' align='center'>KERLIS</Text>
+                    <Box p={{base: '0.5rem 2rem', md: '1rem 0'}}>
+                        <Text color='primary.600' fontSize={{base: '3rem', md: '4rem'}} fontFamily='heading' align='center'>KERLIS</Text>
                     </Box>
                 </Card>
             </Box>
-            <Box sx={{position: 'absolute', left:'300px', top:'260px',  height: 'fit-content' }}>
+            <Box sx={{position: 'absolute', left:{base: 'auto', md: '300px'}, right:{base: '5%', md: 'auto'}, top:{base: '18%', md: '260px'},  height: 'fit-content', width: {base: '200px', md: 'auto'}}}>
                 <Card>
                     <Box p='1.5rem 0'>
                         <Text color='primary.600' fontSize='1rem' fontFamily='subtitle' align='center'>FRONT-END DEVELOPER</Text>
                     </Box>
                 </Card>
             </Box>
-            <Box sx={{position: 'absolute', left:'100px', top:'500px',  height: 'fit-content', maxWidth: '500px'}}>
+            <Box sx={{position: 'absolute', left:{base: 'auto', md: '100px'},  right:{base: '5%', md: 'auto'} , top:'500px',  height: 'fit-content', maxWidth: {base: '80%' , md: '500px'}}}>
                 <Card>
                     
                     <Box p='1rem 1.5rem'>

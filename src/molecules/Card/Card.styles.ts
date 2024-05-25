@@ -3,17 +3,17 @@ export const cardStyles = {
     minWidth:{ base:'auto', md:'350px' } ,
     width: 'fit-content',
     borderRadius: '5px',
-    backgroundColor: 'neutral.0'
+    backgroundColor: 'neutral.0',
 }
 
 export const titleStyles = {
-    padding: '0.5rem',
+    padding:{base: '0.2rem', md: '0.5rem'},
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     background : 'primary.300',
     fontFamily: 'heading',
-    fontSize: { sm:'1rem', md:'1.5rem' },
+    fontSize: { base:'1rem', md:'1.5rem' },
     borderRadius: '5px 5px 0 0'
 
 }

@@ -10,10 +10,10 @@ export const presentationStyles = {
 }
 
 export const rightBoxStyles = {
-    width: '50%',
+    width: {base: '100%' , md: '50%'},
     height: '100%',
     display: 'flex',
-    paddingLeft: '100px',
+    paddingLeft:{base: '0' , md: '100px'} ,
     paddingBottom: '4rem',
     position: 'relative',
     flexWrap: 'wrap',
