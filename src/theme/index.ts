@@ -1,3 +1,3 @@
-import themeProvider from "./themeProvider";
+import themeProvider from './themeProvider';
 
 export default themeProvider;
