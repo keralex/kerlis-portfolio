@@ -1,6 +1,12 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import Card from '../../molecules/Card/Card';
-import { presentationStyles, rightBoxStyles } from './Presentation.styles';
+import {
+    descriptionBoxText,
+    presentationStyles,
+    rightBoxStyles,
+    subtitleBoxText,
+    titleBoxText,
+} from './Presentation.styles';
 import background from '../../assets/images/cuadrilla.png';
 import pixelArt from '../../assets/images/pixelArt.png';
 
@@ -11,14 +17,7 @@ const Presentation = () => {
             style={{ backgroundImage: `url(${pixelArt}), url(${background})` }}
         >
             <Box sx={rightBoxStyles}>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        left: { base: '10%', md: '100px' },
-                        top: { base: '5%', md: '100px' },
-                        height: 'fit-content',
-                    }}
-                >
+                <Box sx={titleBoxText}>
                     <Card title={`Hi! I'm`}>
                         <Box p={{ base: '0.5rem 2rem', md: '1rem 0' }}>
                             <Text
@@ -32,16 +31,7 @@ const Presentation = () => {
                         </Box>
                     </Card>
                 </Box>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        left: { base: 'auto', md: '300px' },
-                        right: { base: '5%', md: 'auto' },
-                        top: { base: '18%', md: '260px' },
-                        height: 'fit-content',
-                        width: { base: '200px', md: 'auto' },
-                    }}
-                >
+                <Box sx={subtitleBoxText}>
                     <Card>
                         <Box p="1.5rem 0">
                             <Text
@@ -55,16 +45,7 @@ const Presentation = () => {
                         </Box>
                     </Card>
                 </Box>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        left: { base: 'auto', md: '100px' },
-                        right: { base: '5%', md: 'auto' },
-                        top: '500px',
-                        height: 'fit-content',
-                        maxWidth: { base: '80%', md: '500px' },
-                    }}
-                >
+                <Box sx={descriptionBoxText}>
                     <Card>
                         <Box p="1rem 1.5rem">
                             <Text
@@ -82,7 +63,15 @@ const Presentation = () => {
                     </Card>
                 </Box>
                 {/* buttons  */}
-                <Box display="flex" gap={3} width="100%">
+                <Box
+                    display="flex"
+                    alignItems={{ base: 'center', md: 'auto' }}
+                    justifyContent={{ base: 'center', md: 'left' }}
+                    gap={3}
+                    width="100%"
+                    p={{ base: '1rem', md: '0' }}
+                    flexWrap="wrap"
+                >
                     <Button>Experience</Button>
                     <Button>Education</Button>
                     <Button variant="secondary">Contact</Button>

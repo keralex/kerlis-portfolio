@@ -7,6 +7,13 @@ import '@fontsource/dotgothic16';
 // TODO ADD FONTS
 const themeProvider = extendTheme({
     colors: colors,
+    breakpoints: {
+        base: '0px',
+        sm: '320px',
+        md: '768px',
+        lg: '1200px',
+        xl: '1500px',
+    },
     fonts: {
         heading: `'dotgothic16', sans-serif`,
         subtitle: `'Dela Gothic One', system-ui`,
