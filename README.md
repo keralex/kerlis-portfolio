@@ -22,31 +22,35 @@ Make sure you have the following installed on your machine:
 2. **Install dependencies:**
 
 npm install
-# or
+or
 yarn install
 
 3. **Start the development server:**
 
 npm run dev
-# or
+or
 yarn dev
 
 ## 🛠️ Technologies Used
 
-React: A JavaScript library for building user interfaces.
-Vite: A fast build tool that delivers a blazing fast development experience.
-Chakra UI: A simple, modular, and accessible component library for React.
-TypeScript: A typed superset of JavaScript that helps catch errors early.
+### React:
+A JavaScript library for building user interfaces.
+### Vite:
+A fast build tool that delivers a blazing fast development experience.
+### Chakra UI:
+A simple, modular, and accessible component library for React.
+### TypeScript:
+A typed superset of JavaScript that helps catch errors early.
 
 
 ## 🤝 Contact
 
 I'm always open to discussing new opportunities or collaborations. Feel free to reach out to me:
 
-Email: kerlis.aguado26@GMail.com
-LinkedIn: linkedin.com/in/kerlis-aguado
+- Email: kerlis.aguado26@GMail.com
+- LinkedIn: linkedin.com/in/kerlis-aguado
 
-###Thank you for visiting my portfolio! 😊
+### Thank you for visiting my portfolio! 😊
 
 
 
