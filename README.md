@@ -1,34 +1,52 @@
-# React + TypeScript + Vite
+# 💼 Frontend Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! 🎉 I'm thrilled to have you here. This project showcases some of the work I've done as a Frontend Software Engineer. It's built using **React**, **Vite**, **Chakra UI**, and **TypeScript** to ensure a smooth, efficient, and visually appealing experience.
 
-Currently, two official plugins are available:
+## 🚀 Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you'd like to explore the code or run the project locally, follow these steps:
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Make sure you have the following installed on your machine:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (v14.x or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone the repository:**
+
+   git clone [https://github.com/your-username/your-portfolio.git](https://github.com/keralex/kerlis-portfolio.git)
+
+2. **Install dependencies:**
+
+npm install
+# or
+yarn install
+
+3. **Start the development server:**
+
+npm run dev
+# or
+yarn dev
+
+## 🛠️ Technologies Used
+
+React: A JavaScript library for building user interfaces.
+Vite: A fast build tool that delivers a blazing fast development experience.
+Chakra UI: A simple, modular, and accessible component library for React.
+TypeScript: A typed superset of JavaScript that helps catch errors early.
 
 
-## CSS LIBRARY
- - chakra UI https://chakra-ui.com/
+## 🤝 Contact
+
+I'm always open to discussing new opportunities or collaborations. Feel free to reach out to me:
+
+Email: kerlis.aguado26@GMail.com
+LinkedIn: linkedin.com/in/kerlis-aguado
+
+###Thank you for visiting my portfolio! 😊
+
+
+
