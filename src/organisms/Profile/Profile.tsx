@@ -1,7 +1,12 @@
 import { Box, Button, Image, Text } from '@chakra-ui/react';
 import profileImage from './../../assets/images/profilePixelArt.png';
 import 'react-multi-carousel/lib/styles.css';
-import { profileContainerStyles, profileImageStyles } from './Profile.styles';
+import {
+    descriptionBoxStyles,
+    descriptionContainerStyles,
+    profileContainerStyles,
+    profileImageStyles,
+} from './Profile.styles';
 
 const Profile = () => {
     return (
@@ -13,15 +18,31 @@ const Profile = () => {
                     alt="profile image in a pixel art style"
                 />
                 <Box>
-                    <Button variant="secondary">Kerlis Aguado</Button>
+                    <Button variant="secondary" width="100%" mb="1rem">
+                        Kerlis Aguado
+                    </Button>
                     <Box>
-                        <Text>ENGLISH: B2 Intermediate</Text>
-                        <Text>SPANISH: Native</Text>
+                        <Text color="neutral.0">
+                            ENGLISH: <b>B2 - Intermediate</b>
+                        </Text>
+                        <Text color="neutral.0">
+                            SPANISH: <b>Native</b>
+                        </Text>
                     </Box>
                 </Box>
             </Box>
-            <Box>
-                <Box>Description Box</Box>
+            <Box sx={descriptionContainerStyles}>
+                <Box sx={descriptionBoxStyles}>
+                    <Text color="neutral.0" fontSize="1rem">
+                        With over 4 years of experience as a Frontend developer,
+                        I pride myself on being a creative and responsible
+                        professional. Proficient in technologies such as
+                        JavaScript, TypeScript, React.js, HTML, CSS, jQuery, and
+                        React Native, my unique background in backend
+                        development enhances my ability to communicate
+                        effectively between teams.
+                    </Text>
+                </Box>
             </Box>
         </Box>
     );
