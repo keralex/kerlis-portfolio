@@ -6,6 +6,13 @@ import '@fontsource/dotgothic16';
 
 // TODO ADD FONTS
 const themeProvider = extendTheme({
+    styles: {
+        global: {
+            'html, body': {
+                backgroundColor: colors.primary[500],
+            },
+        },
+    },
     colors: colors,
     breakpoints: {
         base: '0px',
