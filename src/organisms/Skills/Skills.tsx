@@ -2,7 +2,7 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { carouselStyles } from './Skills.styles';
+import { buttonStyles, carouselStyles } from './Skills.styles';
 
 const skillsArray: string[] = [
     'Javascript',
@@ -57,11 +57,7 @@ const CustomRightArrow = (props: any) => {
             top="50%"
             transform="translateY(-50%)"
         >
-            <Button
-                variant="plain"
-                onClick={props.onClick}
-                sx={{ boxShadow: 'none' }}
-            >
+            <Button variant="plain" onClick={props.onClick} sx={buttonStyles}>
                 <Text
                     color="neutral.0"
                     fontSize={{ base: '3rem', md: '4rem' }}
@@ -83,19 +79,7 @@ const CustomLeftArrow = (props: any) => {
             top="50%"
             transform="translateY(-50%)"
         >
-            <Button
-                variant="plain"
-                onClick={props.onClick}
-                sx={{
-                    boxShadow: 'none',
-                    width: '5rem',
-                    height: '5rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: 0,
-                }}
-            >
+            <Button variant="plain" onClick={props.onClick} sx={buttonStyles}>
                 <Text
                     color="neutral.0"
                     fontSize={{ base: '3rem', md: '4rem' }}
