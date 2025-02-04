@@ -2,7 +2,7 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { buttonStyles, carouselStyles } from './Skills.styles';
+import { buttonStyles, carouselStyles, skillBoxStyles } from './Skills.styles';
 
 const skillsArray: string[] = [
     'Javascript',
@@ -53,8 +53,8 @@ const CustomRightArrow = (props: any) => {
     return (
         <Box
             position="absolute"
-            right="0"
-            top="50%"
+            right="-18px"
+            top="40%"
             transform="translateY(-50%)"
         >
             <Button variant="plain" onClick={props.onClick} sx={buttonStyles}>
@@ -75,8 +75,8 @@ const CustomLeftArrow = (props: any) => {
     return (
         <Box
             position="absolute"
-            left="0"
-            top="50%"
+            left="-18px"
+            top="40%"
             transform="translateY(-50%)"
         >
             <Button variant="plain" onClick={props.onClick} sx={buttonStyles}>
@@ -92,6 +92,7 @@ const CustomLeftArrow = (props: any) => {
         </Box>
     );
 };
+
 const Skills = () => {
     return (
         <Box>
@@ -127,7 +128,9 @@ const Skills = () => {
                     customLeftArrow={<CustomLeftArrow />}
                 >
                     {skillsArray.map((skillName, index) => (
-                        <div key={index}>{skillName}</div>
+                        <Box key={index} sx={skillBoxStyles}>
+                            {skillName}
+                        </Box>
                     ))}
                 </Carousel>
                 ;
@@ -135,4 +138,5 @@ const Skills = () => {
         </Box>
     );
 };
+
 export default Skills;
