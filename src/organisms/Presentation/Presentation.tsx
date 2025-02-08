@@ -72,7 +72,17 @@ const Presentation = () => {
                     p={{ base: '1rem', md: '0' }}
                     flexWrap="wrap"
                 >
-                    <Button>Experience</Button>
+                    <Button
+                        onClick={() => {
+                            const profileElement =
+                                document.getElementById('profile');
+                            if (profileElement) {
+                                profileElement.scrollIntoView();
+                            }
+                        }}
+                    >
+                        Experience
+                    </Button>
                     <Button>Education</Button>
                     <Button variant="secondary">Contact</Button>
                 </Box>

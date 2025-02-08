@@ -1,11 +1,5 @@
 /* eslint-disable react/prop-types */
-import {
-    Box,
-    Button,
-    Text,
-    useBreakpointValue,
-    useMediaQuery,
-} from '@chakra-ui/react';
+import { Box, Button, Text, useMediaQuery } from '@chakra-ui/react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { buttonStyles, carouselStyles, skillBoxStyles } from './Skills.styles';

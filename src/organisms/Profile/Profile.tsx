@@ -8,7 +8,7 @@ import {
     profileImageStyles,
     ProfileStyles,
 } from './Profile.styles';
-import Skills from '../Skills/Skills';
+import Skills from './components/Skills/Skills';
 
 const Profile = () => {
     return (
@@ -39,13 +39,19 @@ const Profile = () => {
                 <Box sx={descriptionContainerStyles}>
                     <Box sx={descriptionBoxStyles}>
                         <Text color="neutral.0" fontSize="1rem">
-                            With over 4 years of experience as a Frontend
-                            developer, I pride myself on being a creative and
-                            responsible professional. Proficient in technologies
-                            such as JavaScript, TypeScript, React.js, HTML, CSS,
-                            jQuery, and React Native, my unique background in
-                            backend development enhances my ability to
-                            communicate effectively between teams.
+                            Dynamic Frontend Developer with 5 years of
+                            experience crafting high-quality web applications
+                            that enhance user experience and drive engagement.
+                            Proficient in React.js, TypeScript, JavaScript, and
+                            multiple UI libraries, with a strong background in
+                            developing scalable solutions and implementing
+                            rigorous testing methodologies. Skilled in
+                            collaborating with cross-functional teams to
+                            optimize project outcomes and streamline
+                            communication. Committed to delivering robust,
+                            user-centric products that align with business
+                            objectives while staying updated on emerging
+                            technologies and trends in frontend development.
                         </Text>
                     </Box>
                 </Box>

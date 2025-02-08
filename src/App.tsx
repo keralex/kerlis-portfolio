@@ -6,7 +6,9 @@ function App() {
     return (
         <>
             <Presentation />
-            <Profile />
+            <div id="profile">
+                <Profile />
+            </div>
         </>
     );
 }
