@@ -2,7 +2,8 @@
   "name": "kerlis_portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module","homepage": "https://keralex.github.io/kerlis-portfolio",
+  "type": "module",
+  "homepage": "https://keralex.github.io/kerlis-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
