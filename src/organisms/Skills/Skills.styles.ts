@@ -4,6 +4,8 @@ export const carouselStyles = {
     },
     '& .react-multi-carousel-item--active div': {
         opacity: 1,
+        transform: 'scale(1.2)',
+        margin: ' 0 20px',
     },
 };
 
@@ -21,11 +23,12 @@ export const buttonStyles = {
 };
 
 export const skillBoxStyles = {
+    transition: ' transform 0.6s ease',
     boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
     background:
         'linear-gradient(180deg,rgba(173, 156, 249, 1) 0%, rgba(144, 123, 246, 1) 100%)',
     borderRadius: '6px',
-    margin: '0 3px',
+    margin: '0 10px',
     textAlign: 'center',
     color: 'neutral.0',
     fontFamily: 'subtitle',
