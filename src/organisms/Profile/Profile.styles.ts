@@ -1,7 +1,14 @@
+export const ProfileStyles = {
+    display: 'flex',
+    flexDirection: { base: 'column', md: 'row' },
+    padding: { base: 0, md: '1rem 4rem', lg: '1rem 8rem' },
+    alignItems: 'center',
+};
+
 export const profileContainerStyles = {
     display: { base: 'flex' },
     flexDirection: { base: 'column' },
-    padding: { base: '1rem', md: '50px' },
+    padding: { base: '1rem' },
 };
 
 export const profileImageStyles = {
@@ -11,7 +18,7 @@ export const profileImageStyles = {
 };
 
 export const descriptionContainerStyles = {
-    padding: { base: '0 1rem 1rem 1rem', md: '50px' },
+    padding: { base: '0 1rem 1rem 1rem', md: '0' },
 };
 
 export const descriptionBoxStyles = {

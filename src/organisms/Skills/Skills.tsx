@@ -1,5 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Box, Button, Text } from '@chakra-ui/react';
+import {
+    Box,
+    Button,
+    Text,
+    useBreakpointValue,
+    useMediaQuery,
+} from '@chakra-ui/react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { buttonStyles, carouselStyles, skillBoxStyles } from './Skills.styles';
@@ -94,15 +100,17 @@ const CustomLeftArrow = (props: any) => {
 };
 
 const Skills = () => {
+    const [isMdBreakpoint] = useMediaQuery('(min-width: 768px)');
+    console.log(isMdBreakpoint);
     return (
         <Box>
             <Box sx={carouselStyles}>
                 <Carousel
                     additionalTransfrom={0}
-                    arrows
+                    arrows={!isMdBreakpoint}
                     autoPlay
                     autoPlaySpeed={2000}
-                    centerMode
+                    centerMode={!isMdBreakpoint}
                     className=""
                     containerClass="container"
                     dotListClass=""

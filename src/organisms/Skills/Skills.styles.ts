@@ -4,7 +4,7 @@ export const carouselStyles = {
     },
     '& .react-multi-carousel-item--active div': {
         opacity: 1,
-        transform: 'scale(1.2)',
+        transform: { base: 'scale(1.2)', md: 'none' },
         margin: ' 0 20px',
     },
 };
