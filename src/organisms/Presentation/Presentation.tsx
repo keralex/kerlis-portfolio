@@ -11,6 +11,12 @@ import background from '../../assets/images/cuadrilla.png';
 import pixelArt from '../../assets/images/pixelArt.png';
 
 const Presentation = () => {
+    const handleScroll = (id: string) => {
+        const profileElement = document.getElementById(id);
+        if (profileElement) {
+            profileElement.scrollIntoView();
+        }
+    };
     return (
         <Box
             sx={presentationStyles}
@@ -74,17 +80,20 @@ const Presentation = () => {
                 >
                     <Button
                         onClick={() => {
-                            const profileElement =
-                                document.getElementById('profile');
-                            if (profileElement) {
-                                profileElement.scrollIntoView();
-                            }
+                            handleScroll('profile');
                         }}
                     >
                         Experience
                     </Button>
                     <Button>Education</Button>
-                    <Button variant="secondary">Contact</Button>
+                    <Button
+                        variant="secondary"
+                        onClick={() => {
+                            handleScroll('contact');
+                        }}
+                    >
+                        Contact
+                    </Button>
                 </Box>
             </Box>
         </Box>
