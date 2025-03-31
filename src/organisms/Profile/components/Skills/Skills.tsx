@@ -95,7 +95,7 @@ const CustomLeftArrow = (props: any) => {
 
 const Skills = () => {
     const [isMdBreakpoint] = useMediaQuery('(min-width: 768px)');
-    console.log(isMdBreakpoint);
+
     return (
         <Box>
             <Box sx={carouselStyles}>
@@ -103,7 +103,7 @@ const Skills = () => {
                     additionalTransfrom={0}
                     arrows={!isMdBreakpoint}
                     autoPlay
-                    autoPlaySpeed={2000}
+                    autoPlaySpeed={1600}
                     centerMode={!isMdBreakpoint}
                     className=""
                     containerClass="container"

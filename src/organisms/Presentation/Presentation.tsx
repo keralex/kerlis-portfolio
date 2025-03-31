@@ -46,7 +46,7 @@ const Presentation = () => {
                                 fontFamily="subtitle"
                                 align="center"
                             >
-                                FRONT-END DEVELOPER
+                                WEB DEVELOPER
                             </Text>
                         </Box>
                     </Card>
@@ -83,9 +83,15 @@ const Presentation = () => {
                             handleScroll('profile');
                         }}
                     >
-                        Experience
+                        About Me
                     </Button>
-                    <Button>Education</Button>
+                    <Button
+                        onClick={() => {
+                            handleScroll('experience');
+                        }}
+                    >
+                        Experiences
+                    </Button>
                     <Button
                         variant="secondary"
                         onClick={() => {
