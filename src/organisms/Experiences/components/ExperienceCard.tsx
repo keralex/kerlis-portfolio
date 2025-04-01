@@ -6,7 +6,6 @@ import { JobDescription } from '../../../molecules/JobDescription/JobDescription
 import { useEffect, useState } from 'react';
 
 interface ExperienceCardProps {
-    title: string;
     company: string;
     location: string;
     period: string;
@@ -15,7 +14,6 @@ interface ExperienceCardProps {
 }
 
 export const ExperienceCard = ({
-    title,
     company,
     location,
     period,
@@ -58,8 +56,6 @@ export const ExperienceCard = ({
             >
                 <SlideFade in={isVisible} offsetY="20px" unmountOnExit={false}>
                     <VStack spacing={4} align="stretch">
-                        <h1>{title}</h1>
-
                         <Box>
                             <JobHeader
                                 company={company}
