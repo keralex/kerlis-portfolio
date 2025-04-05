@@ -1,3 +1,4 @@
+import { Box, Text } from '@chakra-ui/react';
 import Card from '../Card/Card';
 
 interface JobHeaderProps {
@@ -6,12 +7,13 @@ interface JobHeaderProps {
     period: string;
 }
 
-export const JobHeader = ({ company, location, period }: JobHeaderProps) => {
+export const JobHeader = ({ location, period }: JobHeaderProps) => {
     return (
         <Card>
-            <h1>{company}</h1>
-            <p>{location}</p>
-            <p>{period}</p>
+            <Box padding="1rem">
+                <Text>{location}</Text>
+                <Text>{period}</Text>
+            </Box>
         </Card>
     );
 };

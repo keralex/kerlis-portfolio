@@ -73,6 +73,7 @@ const Experiences = () => {
             <ExperienceCard
                 key={currentIndex}
                 company={currentExperience.company}
+                position={currentExperience.position}
                 location={currentExperience.location}
                 period={currentExperience.period}
                 responsibilities={currentExperience.responsibilities}

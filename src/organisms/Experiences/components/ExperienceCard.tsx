@@ -1,12 +1,13 @@
 'use client';
 
-import { Box, VStack, Flex, SlideFade, Button } from '@chakra-ui/react';
+import { Box, Flex, SlideFade, Button, Text } from '@chakra-ui/react';
 import { JobHeader } from '../../../molecules/JobHeader/JobHeader';
 import { JobDescription } from '../../../molecules/JobDescription/JobDescription';
 import { useEffect, useState } from 'react';
 
 interface ExperienceCardProps {
     company: string;
+    position: string;
     location: string;
     period: string;
     responsibilities: string[];
@@ -15,6 +16,7 @@ interface ExperienceCardProps {
 
 export const ExperienceCard = ({
     company,
+    position,
     location,
     period,
     responsibilities,
@@ -44,24 +46,39 @@ export const ExperienceCard = ({
             mx="auto"
             overflow="hidden"
             borderRadius="xl"
-            height="450px" // Fixed height to prevent layout shifts
         >
             {/* Content */}
-            <Box
-                position="relative"
-                px={6}
-                py={4}
-                zIndex={1}
-                height="290px" // Fixed height for content area
-            >
+            <Box position="relative" px={6} py={4} zIndex={1}>
                 <SlideFade in={isVisible} offsetY="20px" unmountOnExit={false}>
-                    <VStack spacing={4} align="stretch">
-                        <Box>
+                    <Box display="flex" flexDirection="column">
+                        <Box width="80%" alignSelf="flex-end">
                             <JobHeader
                                 company={company}
                                 location={location}
                                 period={period}
                             />
+                        </Box>
+                        <Box>
+                            <Text
+                                color="neutral.0"
+                                fontSize="3rem "
+                                fontFamily="subtitle"
+                                align="left"
+                                as="h2"
+                            >
+                                {company}
+                            </Text>
+                            <Text
+                                color="neutral.0"
+                                fontSize="2rem "
+                                fontFamily="heading"
+                                align="left"
+                                as="h2"
+                            >
+                                {position}
+                            </Text>
+                        </Box>
+                        <Box>
                             <JobDescription
                                 responsibilities={responsibilities}
                             />
@@ -88,7 +105,7 @@ export const ExperienceCard = ({
                                 More
                             </Button>
                         </Flex>
-                    </VStack>
+                    </Box>
                 </SlideFade>
             </Box>
         </Box>
