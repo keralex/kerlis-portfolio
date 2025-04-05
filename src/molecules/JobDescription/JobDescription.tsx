@@ -1,4 +1,4 @@
-import { VStack } from '@chakra-ui/react';
+import { Box, VStack } from '@chakra-ui/react';
 import { BulletPoint } from '../../atoms/BulletPoint';
 import Card from '../Card/Card';
 
@@ -9,9 +9,11 @@ interface JobDescriptionProps {
 export const JobDescription = ({ responsibilities }: JobDescriptionProps) => {
     return (
         <Card title="My Responsibilities">
-            {responsibilities.map((responsibility, index) => (
-                <BulletPoint key={index} text={responsibility} />
-            ))}
+            <Box sx={{ padding: '1rem' }}>
+                {responsibilities.map((responsibility, index) => (
+                    <BulletPoint key={index} text={responsibility} />
+                ))}
+            </Box>
         </Card>
     );
 };

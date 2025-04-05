@@ -1,9 +1,9 @@
 'use client';
 
-import { Box } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import { ExperienceCard } from './components/ExperienceCard';
 import { useState } from 'react';
-import background from '../../assets/images/cuadrilla.png';
+import { BackgroundBox } from './Experiences.styles';
 
 const experiences = [
     {
@@ -69,7 +69,15 @@ const Experiences = () => {
     const currentExperience = experiences[currentIndex];
 
     return (
-        <Box py={10} style={{ backgroundImage: ` url(${background})` }}>
+        <BackgroundBox py={10}>
+            {/* <Text
+                color="neutral.0"
+                textAlign="center"
+                fontFamily="heading"
+                fontSize="1.5rem"
+            >
+                My Experiences
+            </Text> */}
             <ExperienceCard
                 key={currentIndex}
                 company={currentExperience.company}
@@ -79,7 +87,7 @@ const Experiences = () => {
                 responsibilities={currentExperience.responsibilities}
                 onMoreClick={handleMoreExperiences}
             />
-        </Box>
+        </BackgroundBox>
     );
 };
 

@@ -39,7 +39,7 @@ const Presentation = () => {
                 </Box>
                 <Box sx={subtitleBoxText}>
                     <Card>
-                        <Box p="1.5rem 0">
+                        <Box p="1.5rem 0.5rem">
                             <Text
                                 color="primary.600"
                                 fontSize="1rem"
