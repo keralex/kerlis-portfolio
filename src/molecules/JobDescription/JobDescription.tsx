@@ -1,4 +1,4 @@
-import { Box, VStack } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { BulletPoint } from '../../atoms/BulletPoint';
 import Card from '../Card/Card';
 

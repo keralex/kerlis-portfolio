@@ -1,6 +1,5 @@
 'use client';
 
-import { Box, Text } from '@chakra-ui/react';
 import { ExperienceCard } from './components/ExperienceCard';
 import { useState } from 'react';
 import { BackgroundBox } from './Experiences.styles';
