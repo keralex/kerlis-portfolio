@@ -1,6 +1,7 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import Card from '../../molecules/Card/Card';
 import {
+    buttonBoxStyles,
     descriptionBoxText,
     presentationStyles,
     rightBoxStyles,
@@ -69,15 +70,7 @@ const Presentation = () => {
                     </Card>
                 </Box>
                 {/* buttons  */}
-                <Box
-                    display="flex"
-                    alignItems={{ base: 'center', md: 'auto' }}
-                    justifyContent={{ base: 'center', md: 'left' }}
-                    gap={3}
-                    width="100%"
-                    p={{ base: '1rem', md: '0' }}
-                    flexWrap="wrap"
-                >
+                <Box sx={buttonBoxStyles}>
                     <Button
                         onClick={() => {
                             handleScroll('profile');

@@ -1,3 +1,5 @@
+import { position } from '@chakra-ui/react';
+
 export const presentationStyles = {
     width: '100%',
     height: { base: 'auto', md: '90vh' },
@@ -49,4 +51,18 @@ export const descriptionBoxText = {
     height: 'fit-content',
     marginTop: { base: '140%', md: '0' },
     maxWidth: { base: '80%', md: '500px' },
+};
+
+export const buttonBoxStyles = {
+    display: 'flex',
+    alignItems: { base: 'center', md: 'auto' },
+    justifyContent: { base: 'center', md: 'left' },
+    flexDirection: 'row',
+    gap: 3,
+    width: { base: '100%', md: 'auto' },
+    padding: { base: '1rem', md: '0' },
+    flexWrap: 'wrap',
+    position: { base: 'auto', md: 'absolute' },
+    left: { base: 'auto', md: '46px', xl: '200px' },
+    bottom: { base: 'auto', md: '50px' },
 };
